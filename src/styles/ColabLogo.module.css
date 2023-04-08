@@ -5,6 +5,8 @@
     position: relative;
     height: 240px;
     width: 200px;
+    transition: var(--trans-time) ease-in-out;
+    transform: scale(var(--logo-scale));
 }
 
 .cardContainer{

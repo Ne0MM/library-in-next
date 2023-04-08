@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 240px;
+    width: 200px;
+}
+
+.cardContainer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: var(--z-index);
+    transition: var(--trans-time) linear;
+    transform: rotate(var(--container-deg)) scale(var(--container-scale));
+}
+
+.card{
+    height : 50%;
+    width: 50%;
+    background-color: var(--card-bg);
+}
+
+.centerCircle{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    z-index: 10;
+    background-color: white;
+    transition: var(--trans-time) ease-in-out;
+    transform: scale(var(--center-scale));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7f00ffe6;
+    font-size: 50px;
+}

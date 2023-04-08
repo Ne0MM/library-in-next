@@ -1,0 +1,34 @@
+.Container{
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.SubContainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.LeftContainer{
+    background-color: red;
+    height: 100%;
+    width: 50%;
+}
+
+.RightContainer{
+    background-color: blue;
+    height: 100%;
+    width: 50%;
+}
+
+.coverContainer{
+    position: absolute;
+    transition: 500ms ease-in-out;
+    transform: translateX(var(--Cover-pos));
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 50%;
+}

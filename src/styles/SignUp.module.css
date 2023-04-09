@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
 .Container{
+    font-family: 'Noto-sans', sans-serif;
     display: flex;
     position: relative;
     flex-flow: column;
@@ -12,13 +15,13 @@
 }
 
 .LeftContainer{
-    background-color: red;
+    background-image: linear-gradient(135deg,#6200c4,#200041);
     height: 100%;
     width: 50%;
 }
 
 .RightContainer{
-    background-color: blue;
+    background-image: linear-gradient(-135deg,#0000c4,#000041);
     height: 100%;
     width: 50%;
 }
@@ -27,8 +30,54 @@
     position: absolute;
     transition: 500ms ease-in-out;
     transform: translateX(var(--Cover-pos));
-    background-color: black;
+    background-image: radial-gradient(#0e0e0e, #0a0a0a);
     color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 50%;
+    width: var(--cover-size);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    z-index: 0;
+}
+
+.logoContainer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.logoText{
+    text-align: center;
+    font-size: xx-large;
+    color: #7f00ffe6;
+    text-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: 300ms ease-in-out;
+    transform: scale(var(--text-scale)) translateY(var(--text-place));
+}
+
+.coverButtonContainer{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    transition: 500ms ease-in-out;
+    filter: opacity(var(--button-opacity));
+}
+
+.overButtonText{
+    font-size: 10px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.signUpButton{
+    font-family: inherit;
+    background-color: #7f00ff;
+    color: #0e0e0e;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
 }

@@ -11,7 +11,7 @@ function signUp({}: Props) {
   const [textSize, setTextSize] = useState(0) // logo text animation
   const [textPlace, setTextPlace] = useState(100) // text swing
   const [coverButtonOpacity, setCoverButtonOpacity] = useState(0)
-  const [coverButtonText, setCoverButtonText] = useState("Logar")
+  const [coverButtonText, setCoverButtonText] = useState("Cadastro")
   const [overButtonText, setOverButtonText] = useState("Ja possui conta?")
 
   const handleCoverPos = () => { //handle cover side
@@ -39,8 +39,24 @@ function signUp({}: Props) {
     <div className={styles.Container}>
         <div className={styles.SubContainer}>
 
-            <div className={styles.LeftContainer}></div>
-            <div className={styles.RightContainer}></div>
+            <div className={styles.LeftContainer}>
+              <form className={styles.formContainer}>
+                 <input className={styles.textInput} type="text" id='name' placeholder='Usuario' />
+                 <input className={styles.textInput} type="password" id='password' placeholder="senha"/>
+                 <input className={styles.entrarButton} type="submit" value="Entrar" />
+
+              </form>
+            </div>
+            <div className={styles.RightContainer}>
+
+                <form className={styles.formContainer} action="">
+                  <input className={styles.textInput} type="text" id='name' placeholder='Usuario' />
+                  <input className={styles.textInput} type="email" id='email' placeholder='email'/>
+                  <input className={styles.textInput} type="password" id='password' placeholder="senha"/>
+                  <input className={styles.textInput} type="password" id='passwordConfirm' placeholder='Confirme sua senha'/>
+                  <input type="submit" value='Cadrastrar' className={styles.submitButton}/>
+                </form>
+            </div>
         </div>
         <div className={styles.coverContainer} 
         style={{['--Cover-pos' as any] : `${coverPos}%`,

@@ -1,0 +1,60 @@
+.homeContainer{
+    height: 100vh;
+    background-color: #0e0e0e;
+    font-family: 'Noto-sans', sans-serif;
+}
+
+.headerContainer{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: #8000ff25 0px 12px 28px 0px, #00158d25 0px 2px 4px 0px, #001a8d25 0px 0px 0px 1px inset;
+}
+
+.leftHeader{
+    display: flex;
+    max-height: 6rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.colabName{
+    display: flex;
+    align-items: center;
+    color: #7f00ffe6;
+    font-size: 1.5rem;
+}
+
+.rightContainer{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastroButton{
+    background-color: #7f00ffe6;
+    font-size: 1.3rem;
+    padding: 0px 10px;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    color: #0e0e0e;
+}
+
+.contentContainer{
+    height: 90%;
+    display: flex;
+}
+
+.sideSearchBar{
+    width: 10%;
+    height: 100%;
+}
+
+.mainContentContainer{
+    width: 90%;
+    height: 100%;
+    display: flex;
+}
